@@ -1,1 +1,20 @@
+MINIEP 6
+Samantha Miyahira
+NUSP: 11797261
 
+Na pasta /usr/src/pages contêm os seguintes arquivos:
+
+- Dockerfile
+- Caddyfile
+- index.html
+- about.html
+
+Após isso criei a pasta caddy em /etc/.
+
+Logo em seguida, no diretório /usr/src/pages/ executei o seguinte comando: sudo docker build -t custom-caddy:2.5.0-alpine
+
+Por fim executei os seguintes comandos para construir e excutar a imagem do Docker:
+sudo docker build -t miniep6_img
+docker run -d -p 8080:80 miniep6_img
+
+No navegador digitei: localhost:8080 para vizualizar a página em html.
